@@ -1,0 +1,7 @@
+{
+    "name": "davispuh/fuelphp-lang",
+    "description": "Extended Lang class for FuelPHP",
+    "type": "library",
+    "homepage": "https://github.com/davispuh/FuelPHP-Lang",
+    "license": "UNLICENSE",
+}
