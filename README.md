@@ -1,14 +1,14 @@
 ## Extended Lang class for FuelPHP
 
 This extended Lang class supports localized language URLs
-
-Like
-`http://domain/lang1/controller/method`
-`http://domain/lang2/controller/method`
+```
+http://domain/lang1/controller/method
+http://domain/lang2/controller/method
+```
 
 Only Lang class is changed and without introducing any side-effects thus making it fully backward compatible and keeping FuelPHP API same, but adding additional functionality.
 
-**Table of Contents**
+### Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
