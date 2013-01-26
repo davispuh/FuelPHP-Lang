@@ -40,4 +40,24 @@ class Lang extends \Fuel\Core\Lang
         return $language;
     }
 
+    /**
+     * Create localized URI
+     *
+     * @param    string       $uri       URI to localize
+     * @param    string|null  $language  name of the language with which create URI, null for active language
+     * @return   string                  localized URI
+     */
+    public static function localized($uri, $language = null)
+    {
+        if (empty($language))
+        {
+            $language = self::get_lang();
+        }
+        if (!empty($language) and $language != self::$default_language)
+        {
+            $uri = '/' . $language . $uri;
+        }
+        return $uri;
+    }
+
 }
